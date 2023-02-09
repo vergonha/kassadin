@@ -10,7 +10,5 @@ async def on_ready():
 for filename in os.listdir('commands'):
   if filename.endswith('.py'):
         bot.load_extension(f'commands.{filename[:-3]}')  
-
-token = os.environ['token_discord']
-my_secret = os.environ['token_discord']
+        
 bot.run(os.environ['token_discord'])
